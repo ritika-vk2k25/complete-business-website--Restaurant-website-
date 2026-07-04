@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the webpage -->
+    <title>Contact page</title>
+
+    <!-- CSS file linked with HTML file -->
+    <link rel="stylesheet" 
+          href="./css/style_contact.css" />
+  </head>
+
+  <body>
+
+    <!-- CSS Grid container -->
+    <div class="grid-container">
+
+      <!-- Navigation bar -->
+      <div class="navigation-bar">
+        <ul class="nav-list">
+
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="index.html"
+               >Home</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="about.html"
+               >About</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="menu.html"
+               >Menu</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="reservation.html"
+               >Reservation</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="contact.html"
+               >Contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+       
+
+      <!-- Main content -->
+      <div class="contact-info">
+
+        <!-- Theme toggle button -->
+        <div class="theme-toggle">
+          <button class="theme-toggle-button">&#127769</button>
+        </div>
+
+        <!-- Main heading -->
+        <h2>Contact Us</h2>
+
+        <!-------------------------- Contact details ------------------------------->
+
+        <!-- Address of restaurant -->
+        <h3 class="headings">
+          Address
+        </h3>
+
+        <address class="info">
+          123 Main Road, <br />
+          New Delhi - 110001
+        </address>
+
+        <!-- Contact number of restaurant -->
+        <h3 class="headings">
+          Contact Number
+        </h3>
+
+        <p class="info">
+           9876543210
+        </p>
+
+        <!-- Email ID of restaurant -->
+        <h3 class="headings">
+            Email
+        </h3>
+
+        <p class="info">
+           info@shahidawat.com
+        </p>
+
+        <!-- Opening Hours of restaurant -->
+        <h3 class="headings">
+            Opening Hours
+        </h3>
+
+        <p class="info"
+           >Mon-Fri: 11:00 AM - 10:00 PM
+        </p>
+
+        <p class="info"
+           >Sat-Sun: 10:00 AM - 11:00 PM
+        </p>
+
+      
+
+
+        <!-------------------------- Contact form ------------------------------------>
+      
+        <h3 id="contact-form-heading" 
+            class="headings">
+            Contact form
+        </h3>
+
+        <form id="form">
+
+          <label class="labels"
+                 for="name"
+                 >Name: </label>
+          <input id="name"
+                 class="input-box" 
+                 type="text"
+                 placeholder="Enter your name" 
+                 required 
+                 autocomplete="name" 
+                 minlength="3"/>
+          <small id="name-error"
+                 class="error-messages"></small>
+          <br />
+          <br />
+
+          <label class="labels"
+                 for="phone-number"
+                 >Phone Number: </label>
+          <input id="ph-no"
+                 class="input-box" 
+                 type="tel"
+                 placeholder="Enter phone number" 
+                 required 
+                 autocomplete="phone-number" 
+                 size="10"/> 
+          <small id="phone-error"
+                 class="error-messages"></small>
+          <br />
+          <br />
+
+          <label class="labels"
+                 for="email"
+                 >Email: </label>
+          <input id="email"
+                 class="input-box" 
+                 type="email" 
+                 placeholder="Enter your email"
+                 required />
+          <small id="email-error"
+                 class="error-messages"></small>
+          <br />
+          <br />
+
+          <label class="labels"
+                 for="text-area"
+                 >Message:</label>
+          <textarea
+            id="text-area"
+            class="input-box"
+            placeholder="Write a message"
+            required
+            maxlength="100"
+          ></textarea>
+          <br />
+          <br />
+          <br />
+
+          <!-- Contact form submit button -->
+          <div class="submit-button" 
+               type="Submit">
+            <button class="button">Submit</button>
+          </div>
+
+        </form>
+     </div>
+      
+
+    </div>
+
+    <!-- JS file linked to html file -->
+    <script src="./js/script_theme.js"></script>
+    <script src="./js/script_contact.js"></script>
+    
+  </body>
+</html>

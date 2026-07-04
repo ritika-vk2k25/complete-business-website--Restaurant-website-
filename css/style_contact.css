@@ -1,0 +1,287 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color of the body of Home page using 'background-color' property */
+body {
+  background-color: #faf8f1;
+}
+
+/* dark mode styling */
+.dark {
+  background-color: black;
+
+  @media (max-width: 767px) {
+    .navigation-bar {
+      background-color: black;
+    }
+
+    .nav-list-items {
+      background-color: black;
+    }
+  }
+
+  .theme-toggle-button {
+    background-color: black;
+  }
+
+  .theme-toggle-button:hover{
+    background-color: black;
+  }
+
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  height: 100vh;
+  max-width: 100%;
+
+  grid-template-columns: 15% 1fr 1fr;
+  gap: 20px;
+}
+
+/* Navigation bar layout and styling */
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  font-size: larger;
+  background-color: #5c490e;
+}
+
+.nav-list {
+  list-style: none;
+  margin-top: 50px;
+
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list-items {
+  margin: 20px;
+  padding: 10px;
+
+  text-align: center;
+
+  background-color: #ece7d1;
+  border-radius: 50px;
+}
+
+.nav-list-links {
+  color: #8a7650;
+  text-decoration: none;
+}
+
+/* Navigation links hover effect */
+.nav-list-links:hover {
+  color: #cfa24d;
+}
+
+/* Theme toggle button layout */
+.theme-toggle {
+  display: flex;
+  justify-content: end;
+}
+
+/* Theme toggle button styling */
+.theme-toggle-button {
+  width: 10%;
+  height: 100%;
+
+  font-size: xx-large;
+
+  background-color: #faf8f1;
+  border: none;
+  border-radius: 50%;
+}
+
+/* Theme toggle button hover effect */
+.theme-toggle-button:hover {
+  cursor: pointer;
+  background-color: #faf8f1;
+}
+
+/* Main content layout and styling*/
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  grid-column-start: 2;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+
+  max-width: 100%;
+  margin: 20px 30px 20px 20px;
+}
+
+
+
+/* Main heading styling */
+h2 {
+  margin: 30px;
+  padding: 10px;
+
+  font-size: 4rem;
+  color: #bc9243;
+}
+
+/* Sub-headings styling */
+h3 {
+  margin-bottom: 2px;
+  padding: 10px;
+
+  font-size: x-large;
+  font-weight: bolder;
+  color: #d59b5e;
+}
+
+/* Restaurant details styling */
+.info {
+  color: #916921;
+}
+
+/* Label styling */
+.labels {
+  font-size: large;
+  color: #a05c14;
+}
+
+/* Input box styling */
+.input-box {
+  height: 40px;
+  width: 300px;
+
+  text-align: center;
+
+  border: 4px solid #5f4a27;
+  border-radius: 5px;
+  background-color: #fbecd1;
+}
+
+/* Contact form submit button styling */
+.button {
+  display: block;
+  margin: 10px 10px 10px 200px;
+  padding: 3px;
+
+  height: 30px;
+  width: 80px;
+
+  border: none;
+  border-radius: 5px;
+
+  text-align: center;
+
+  font-size: medium;
+  font-weight: 200;
+  font-family: "Times New Roman", Times, serif;
+  color: #e6dcbc;
+
+  cursor: pointer;
+  position: relative;
+
+  background-color: #6f5933;
+}
+
+/* Submit button hover effect */
+button:hover {
+  background-color: #907443;
+}
+
+.error-messages{
+    color: red;
+  }
+
+/* Using media queries for responsiveness */
+
+/* -------------------------For Mobile phones ------------------------------*/
+@media (max-width: 767px){
+
+  /* Grid Layout */
+  .grid-container {
+    height: fit-content;
+  grid-template-rows: 5% 95%;
+  }
+
+  /* Navigation bar styling */
+  .navigation-bar {
+  align-items: center;
+
+  font-size: medium;
+  background-color: #FAF8F1;
+
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  width: 100%;
+  z-index: 1000;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+.nav-list {
+  list-style: none;
+  margin-top: 5px;
+  
+  display: flex;
+  flex-direction: row;
+
+  position: static;
+}
+
+.nav-list-items {
+  margin: 5px;
+  padding: 5px;
+ 
+  background-color: #FAF8F1;
+}
+
+/* Theme toggle button styling */
+  .theme-toggle-button {
+  width: fit-content;
+  }
+
+
+/* Main content layout and styling*/
+.contact-info {
+  margin: 0px 30px 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 2;
+}
+
+/* Main heading styling */
+  h2 {
+  margin: 0px 0px 0px 10px;
+  padding: 0px;
+
+  font-size: 3rem;
+  }
+
+/* Input box styling */
+.input-box{
+  width: 80%;
+}
+
+}

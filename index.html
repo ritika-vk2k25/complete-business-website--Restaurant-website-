@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the website -->
+    <title>Complete Business Website</title>
+
+    <!-- CSS file linked with HTML file -->
+    <link rel="stylesheet" 
+          href="./css/style_home.css" />
+
+    <!-- Imported Google Fonts -->
+    <link rel="preconnect" 
+          href="https://fonts.googleapis.com" />
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" 
+          href="https://fonts.googleapis.com" />
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Lobster&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <!-- CSS Grid used to place the navigation bar 
+     separate from other contents -->
+    <div class="grid-container">
+
+      <!-- Code for creating navigation bar -->
+      <div class="navigation-bar">
+
+        <!-- Navigation bar created using unorderd list :
+             <ul> and <li> tag -->
+        <ul class="nav-list">
+
+           <!-- Created links to destination webpages 
+            inside <li> tag 
+            using <a> tag 
+            and href attribute -->
+          <li class="nav-list-items">
+              <!-- Link to Home page -->
+            <a class="nav-list-links" 
+               href="index.html"
+               >Home</a>
+          </li>
+
+          <li class="nav-list-items">
+            <!-- Link to About page -->
+            <a class="nav-list-links" 
+               href="about.html"
+               >About</a>
+          </li>
+
+          <li class="nav-list-items">
+            <!-- Link to Menu page -->
+            <a class="nav-list-links" 
+               href="menu.html"
+               >Menu</a>
+          </li>
+
+          <li class="nav-list-items">
+            <!-- Link to Resevation page -->
+            <a class="nav-list-links" 
+               href="reservation.html"
+               >Reservation</a>
+          </li>
+
+          <li class="nav-list-items">
+            <!-- Link to Contact page -->
+            <a class="nav-list-links" 
+               href="contact.html"
+               >Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      
+      <!-- Code for main content of the 
+           Home page -->
+      <div class="main-content">
+        
+        <!-- Theme toggle button -->
+        <div class="theme-toggle">
+          <button class="theme-toggle-button">&#127769</button>
+        </div>
+
+        <!-- Added name of the restraunt 
+          using <h1> tag and 
+          logo of the restraunt 
+          using <img> tag-->
+        <div class="restaurant-name">
+
+          <!-- Main heading -->
+          <h1>Shahi Dawat</h1>
+
+          <!-- Logo -->
+          <img class="logo" 
+               src="./images/logo.avif" 
+               alt="logo of restraunt" />
+
+        </div>
+
+        <!-- Added a tagline for the restraunt 
+             using <p> tag -->
+        <div class="tagline">
+          <p>Dawat that defines Luxury in every bite...</p>
+        </div>
+
+        <!-- Added a button 
+            for booking a table 
+            in the restraunt -->
+        <div class="table-booking-button-container">
+          
+          <button class="table-booking-button">
+            <a class="table-booking-button-text" 
+               href="./reservation.html"
+               >Find a Table</a>
+          </button>
+          
+        </div>
+
+        <!-- Added an image of the restraunt 
+            using <img> tag-->
+        <div class="hero-image">
+          <img class="img" 
+               src="./images/image-restaurant.jpg" 
+               alt="restaurnt image" />
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- JS file linked to html file -->
+    <script src="./js/script_theme.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title of the webpage -->
+    <title>Reservation page</title>
+
+    <!-- CSS file linked with HTML file -->
+    <link rel="stylesheet" 
+          href="./css/style_reservation.css" />
+  </head>
+
+  <body>
+
+    <!-- CSS Grid container -->
+  <div class="grid-container">
+
+      <!-- Navigation bar -->
+      <div class="navigation-bar">
+        <ul class="nav-list">
+
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="index.html"
+               >Home</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="about.html"
+               >About</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="menu.html"
+               >Menu</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="reservation.html"
+               >Reservation</a>
+          </li>
+          <li class="nav-list-items">
+            <a class="nav-list-links" 
+               href="contact.html"
+               >Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    
+
+       
+      <!-- Main content -->
+    <div class=reservation-form>
+
+      <!-- Theme toggle button -->
+      <div class="theme-toggle">
+          <button class="theme-toggle-button">&#127769</button>
+        </div>
+
+        <!-- Main heading -->
+        <h2 class="heading">Enter the following details for table reservation: </h2>
+
+        <!-- Reservation form -->
+    <form id="form">
+
+      <label class="labels" 
+             for="name"
+             >Name: </label>
+      <input id="name"
+             class="input-box" 
+             type="text" 
+             placeholder="Enter your name" 
+             required 
+             autocomplete="name" 
+             minlength="3"/>
+      <small id="name-error"
+             class="error-messages"></small>
+      <br />
+      <br />
+
+      <label class="labels" 
+             for="phone-number"
+             >Phone Number: </label>
+      <input id="ph-no"
+             class="input-box" 
+             type="tel" 
+             placeholder="Enter phone number" 
+             required 
+             autocomplete="name" 
+             size="10"/>
+      <small id="phone-error"
+             class="error-messages"></small>
+      <br />
+      <br />
+
+      <label class="labels" 
+             for="email"
+             >Email: </label>
+      <input id="email"
+             class="input-box" 
+             type="email" 
+             placeholder="Enter your email" 
+             required />
+      <small id="email-error"
+             class="error-messages"></small>
+      <br />
+      <br />
+
+      <label class="labels" 
+             for="date"
+             >Date: </label>
+      <input id="date"
+             class="input-box" 
+             type="date" 
+             placeholder="DD/MM/YYYY" 
+             required />
+      <br />
+      <br />
+
+      <label class="labels" 
+             for="time"
+             >Time: </label>
+      <input id="time" 
+             class="input-box" 
+             type="time" 
+             placeholder="-- : -- AM/PM" 
+             required />
+      <small id="time-error"
+             class="error-messages"></small>
+      <br />
+      <br />
+
+      <label class="labels" 
+             for="number-of-guests"
+             >Number of Guests: </label>
+
+      <select id="guest"
+              class="drop-down" 
+              required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+
+      <br>
+      <br>
+
+      <!-- Form submit button -->
+      <div class="submit-button">
+           
+      <button class="button" 
+              type="submit"
+              >Submit</button>
+      </div>
+
+    </form>
+
+    </div>
+
+    </div>
+
+    <!-- JS file linked to html file -->
+    <script src="./js/script_theme.js"></script>
+    <script src="./js/script_reservation.js"></script>
+
+  </body>
+</html>
